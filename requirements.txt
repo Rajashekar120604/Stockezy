@@ -1,0 +1,10 @@
+streamlit
+yfinance
+pandas
+numpy
+transformers
+langchain
+requests
+ta
+pinecone-client
+openai 

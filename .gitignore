@@ -1,0 +1,17 @@
+# .gitignore for Stockezy
+
+# Ignore virtual environment
+venv/
+
+# Ignore Streamlit cache
+.streamlit/
+
+# Ignore Python cache
+__pycache__/
+
+# Ignore Jupyter Notebook checkpoints (if any)
+.ipynb_checkpoints/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
