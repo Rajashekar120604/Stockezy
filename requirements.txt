@@ -8,3 +8,4 @@ requests
 ta
 pinecone-client
 openai 
+torch
