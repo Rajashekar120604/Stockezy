@@ -6,9 +6,15 @@ import requests # Import requests for Together AI API calls
 # import anthropic # Uncomment and import other libraries as needed
 # from langchain.llms import YourOtherLLM # Example for LangChain integration
 
-# --- API Keys (Replace with your actual keys) ---
-NEWS_API_KEY = "d31aaa0ad9384840942091f6e040532a"
-TOGETHER_AI_API_KEY = "tgp_v1_lJnmHnecCkQPf0QbkzDSa5WVzohj6EX5WFAoqXJf9NU"
+from dotenv import load_dotenv
+import os
+
+# Load variables from .env
+load_dotenv()
+
+# Get API keys from environment
+NEWS_API_KEY = os.getenv("NEWS_API_KEY")
+TOGETHER_AI_API_KEY = os.getenv("TOGETHER_AI_API_KEY")
 # -----------------------------------------------
 
 st.set_page_config(page_title="Stockezy Dashboard", layout="wide")
